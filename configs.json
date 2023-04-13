@@ -1,0 +1,5 @@
+{
+    "drive_folder_id": "ID_OF_YOUR_GOOGLE_DRIVE",
+    "local_folder_path": "~/PATH/TO/YOUR/LOCAL/FOLDER",
+    "log_file_path": false
+}

@@ -1,11 +1,12 @@
-# This script help to synchronise a local folder with you Google Drive folder
+# This script helps synchronize a local folder with your Google Drive folder.
 
-The original repositores are :
+The original repositories are and authors:
+
 * [pedronogs : auto-sync-drive](https://github.com/pedronogs/auto-sync-drive)
 * [HowStrange : sync-googledrive](https://github.com/HowStrange/sync-googledrive)
 
-I just add some modification and adapt it for Linux, my next task is to build graphical interface with Tkinter or make a web-app with using Flask.
-For Windows user you can see those above link and adapt it.
+I added some modifications and adapted it for Linux. My next task is to build a graphical interface with Tkinter or make a web app using Flask and add an exclusion files. For Windows users, you can see the links above and adapt the script accordingly.
+
 
 **Note :** I am note responsible for any loss of your data, use it at your own risk
 
@@ -20,10 +21,10 @@ This is the step :
 2. Click on “Credentials” in the left-hand menu.
 3. Click on “Create credentials” and select “OAuth client ID.”
 4. Choose application type : Desktop app
-5. Put a name for example: Sync_GoogleDrive_and_Local.
+5. Put a name for example: up_down_Gdrive.
 6. Click on Create.
 7. On the pop-up click Download json
-8. Locale a file starting by "client_secret_......" in your download folder.
+8. Locate a file starting with "client_secret_..." in your download folder.
 9. Rename it to "credentials.json" and put it in the same folder as the python script
 
 
@@ -45,7 +46,7 @@ pip install -r requirement.txt
 ```
 
 4. Setting 
-    * Open your Google Drive folder, the one where you want to synchronise : and copy the last parameter on the link like this:
+    * Open your Google Drive folder, the one where you want to synchronize : and copy the last parameter on the link like this (GOOGLE DRIVE FOLDER ID):
     ![](assets/drive_id.png)
     * Open the config.json, you will see this :
 
@@ -58,15 +59,19 @@ pip install -r requirement.txt
 Fill the required information, and save it.
 
 
-5. Run 'gSync.py'
+5. Running the script:
 ```
 python up_down_GDrive.py
 ```
 
-On the first time it will open your web browser to ask for the authorization to have the access on your Google Drive through your gmail account. And if everything is okay, The synchronisation will start.
+On the first run, it will open your web browser to ask for authorization to access your Google Drive through your Gmail account.
+If everything is okay, the synchronization will start.
+Every time you want to synchronize your folder, just repeat step 5.
 
 
-And every time you want to synchronise your folder, just do the step 5.
+A screenshot:
+![](assets/screenshot.png)
 
 
 
+**Enjoy ;)**
